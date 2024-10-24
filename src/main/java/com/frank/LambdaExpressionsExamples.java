@@ -20,7 +20,9 @@ public class LambdaExpressionsExamples {
         System.out.println("\n-------- Display elements in a List ---------");
 
 
-        names.forEach( (aName) -> {System.out.println("Name: " + aName);});  // List version of forEach()
+        names.forEach( aName -> {System.out.println("Name: " + aName);});
+
+        names.stream().forEach( (aName) -> {System.out.println("Name: " + aName);});// List version of forEach()
 
         /***************************************************************************************
          * stream().map() Stream Interface function
